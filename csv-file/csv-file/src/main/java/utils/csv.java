@@ -58,12 +58,12 @@ public class csv {
 //    --validation--
 
     public void fileWriter(String fileName, String content) {
-        String path = "C:\\Users\\tumkiran\\csv-file\\csv-file\\src\\main\\resources\\datafiles";
+        String path = "C:\\Users\\tumkiran\\buddygraduate\\assignment\\assignment\\csv-file\\csv-file\\src\\main\\resources\\datafiles";
         File directory = new File(path);
         if (!directory.exists()) {
             directory.mkdir();
         }
-        path = "C:\\Users\\tumkiran\\csv-file\\csv-file\\src\\main\\resources\\datafiles" + fileName;
+        path = "C:\\Users\\tumkiran\\buddygraduate\\assignment\\assignment\\csv-file\\csv-file\\src\\main\\resources\\datafiles" + fileName;
         File fileObject = new File(path);
         try {
             if (fileObject.exists()) {

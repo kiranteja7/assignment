@@ -7,8 +7,8 @@ import java.util.*;
 public class CsvTask {
     public static void main(String[] args) {
         csv obj = new csv();
-        String file1 = "C:\\Users\\tumkiran\\csv-file\\csv-file\\src\\main\\resources\\datafiles\\readInput.csv";
-        String file2 = "C:\\Users\\tumkiran\\csv-file\\csv-file\\src\\main\\resources\\datafiles\\readInput2.csv";
+        String file1 = "C:\\Users\\tumkiran\\buddygraduate\\assignment\\assignment\\csv-file\\csv-file\\src\\main\\resources\\datafiles\\readInput.csv";
+        String file2 = "C:\\Users\\tumkiran\\buddygraduate\\assignment\\assignment\\csv-file\\csv-file\\src\\main\\resources\\datafiles\\readInput2.csv";
         CSVParser csvParser1 = obj.loadFile(file1);
         CSVParser csvParser2 = obj.loadFile(file2);
         List<String> header1 = obj.getHeaders(csvParser1);
