@@ -13,7 +13,7 @@ public class ReadingExcel {
     public static void main(String[] args) throws IOException {
 
         int String=0,num=0,bool=0;
-        String excelFilePath=".\\datafiles\\readInput.xlsx";
+        String excelFilePath="C:\\Users\\tumkiran\\buddygraduate\\assignment\\assignment\\datafiles\\readInput.xlsx";
 
         FileInputStream inputStream = new FileInputStream(excelFilePath);
 
@@ -40,6 +40,6 @@ public class ReadingExcel {
             }
             System.out.println();
         }
-       System.out.println("String count:" +String+"   "+"Number count is"+num+"  "+"boolean count is"+bool);
+       System.out.println("String count is :" +String+"   "+"Number count is"+num+"  "+"boolean count is"+bool);
     }
 }
