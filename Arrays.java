@@ -19,7 +19,7 @@ public class Arrays {
         boolean flag=true;
         for(int i=0;i<arr.length;i++){
             int value=arr[i];
-            if(value >= 65 && value <= 90 || value>=97 && value<=122){
+            if(value >= 0 && value <= 47 || value>=58 && value<=127){
                 flag=false;
             }
         }
