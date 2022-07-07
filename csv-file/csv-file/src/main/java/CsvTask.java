@@ -60,12 +60,19 @@ public class CsvTask {
         List<List<String>> row2 = obj.getRows(csvParser2);
         for (int i=0; i<row1.size(); i++){
             List rowFile1 = row1.get(i);
-            List rowFile2 = row2.get(i);
+
+           List rowFile2 = row2.get(i);
+            for (String key: final_data.keySet()){
+                file3Content += getData(rowFile1,final_data.get(key)[0])+",";
+
+            }
+            file3Content+="\n";
+
            for (String key: final_data.keySet()
              ) {
                // file3Content += rowFile1.get(final_data.get(key)[0]+rowFile2.get(final_data.get(key)[1]);
-                file3Content += getData(rowFile1,final_data.get(key)[0])+getData(rowFile2,final_data.get(key)[1])+",";
-
+                //file3Content += getData(rowFile1,final_data.get(key)[0])+getData(rowFile2,final_data.get(key)[0])+",";
+               file3Content += getData(rowFile2,final_data.get(key)[1])+",";
         }
            file3Content+="\n";
         }
@@ -84,7 +91,7 @@ public class CsvTask {
        obj.fileWriter("file3.csv", file3Content);
     }
     static String getData(List<String> ls, int index) {
-        if(index==-1) return "";
+        if(index==-1) return "-";
         return ls.get(index);
     }
 }
